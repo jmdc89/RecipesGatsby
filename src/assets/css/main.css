@@ -67,6 +67,7 @@
   --max-width: 1120px;
   --fixed-width: 600px;
 }
+
 html {
   font-size: var(--defaultFontSize);
 }
@@ -208,6 +209,7 @@ button,
   transition: var(--transition);
   text-transform: capitalize;
 }
+
 button:hover,
 .btn:hover {
   color: var(--white);

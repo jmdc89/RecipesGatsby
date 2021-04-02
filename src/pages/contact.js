@@ -42,6 +42,32 @@ const FeaturedRecipes = styled.section`
   }
 `
 
+const Button = styled.button.attrs(props => ({
+  type: "",
+}))`
+  cursor: pointer;
+  appearance: none;
+  color: white;
+  background: #645cff;
+  border: none;
+  border-radius: 0.25rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+
+  :hover {
+    color: var(--white);
+    background: var(--primary-700);
+    box-shadow: var(--shadow-2);
+  }
+`
+
+const BtnBlock = styled(Button)`
+  width: 100%;
+`
+
 const Contact = () => {
   return (
     <Layout>
@@ -65,17 +91,15 @@ const Contact = () => {
                 <label htmlFor="name">your name</label>
                 <input type="text" name="name" id="name" />
               </FormRow>
-              <div className="form-row">
+              <FormRow>
                 <label htmlFor="email">your email</label>
                 <input type="text" name="email" id="email" />
-              </div>
-              <div className="form-row">
+              </FormRow>
+              <FormRow>
                 <label htmlFor="message">message</label>
                 <textarea name="message" id="message"></textarea>
-              </div>
-              <button type="submit" className="btn block">
-                submit
-              </button>
+              </FormRow>
+              <BtnBlock type="submit">submit</BtnBlock>
             </Form>
           </article>
         </ContactPage>
