@@ -363,12 +363,12 @@ form > *:last-child {
   margin-bottom: -9px;
 } */
 
-/* .nav-btn {
+.nav-btn {
   padding: 0.15rem 0.75rem;
 }
 .nav-btn svg {
   font-size: 1.5rem;
-} */
+}
 
 .nav-links {
   height: 0;
@@ -417,9 +417,9 @@ form > *:last-child {
     height: auto;
   } */
 
-  /* .nav-btn {
+  .nav-btn {
     display: none;
-  } */
+  }
   .nav-links {
     height: auto !important;
     flex-direction: row;
