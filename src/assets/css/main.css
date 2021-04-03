@@ -258,14 +258,15 @@ button.block {
   max-width: var(--max-width);
   margin: 0 auto;
 }
-/* .page {
+
+.page {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 .page {
   min-height: calc(100vh - (6rem + 4rem));
-} */
+}
 
 .title {
   text-align: center;
